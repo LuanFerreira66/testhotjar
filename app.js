@@ -43,7 +43,7 @@ function iniciarTimer() {
 
     if (distancia < 0) {
       document.getElementById("timer").innerHTML = "Período de cadastramento encerrado.";
-      document.getElementById("btnCadastrar").disabled = true;
+      document.getElementById("btnCadastrar").disabled = false;
     }
   }, 1000);
 }
