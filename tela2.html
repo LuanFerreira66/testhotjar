@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Concluído</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Cadastro Concluído com Sucesso!</h1>
+  <p>Obrigado por se cadastrar. Seus dados foram enviados com sucesso.</p>
+  <p>Nome: <span id="nome"></span></p>
+  <p>E-mail: <span id="email"></span></p>
+  <p>CPF: <span id="cpf"></span></p>
+  <p>Telefone: <span id="telefone"></span></p>
+  <button onclick="window.location.href='FinalHtml.html'">Continuar</button>
+</div>
+<script>
+
+  window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("nome").innerText = urlParams.get("nome");
+    document.getElementById("email").innerText = urlParams.get("email");
+    document.getElementById("cpf").innerText = urlParams.get("cpf");
+    document.getElementById("telefone").innerText = urlParams.get("telefone");
+  }
+</script>
+</body>
+</html>
