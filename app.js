@@ -28,7 +28,7 @@ function validarCPF(input) {
 }
 
 function iniciarTimer() {
-  const fim = new Date("2024-09-07T00:00:00").getTime();
+  const fim = new Date("2024-09-21T00:00:00").getTime();
 
   setInterval(function () {
     const agora = new Date().getTime();
